@@ -1,11 +1,11 @@
-class Animal:
+class Animal: #parent class
     def __init__(self,name):
         self.name=name
     def show(self):
         print(f"your name is {self.name}")
-class Human(Animal):
+class Human(Animal): #child class
     def __init__(self,name,age):
-        super().__init__(name)
+        super().__init__(name) #calls parent class's __init__ method
         self.age=age
     def show(self):
         print(f"your name is {self.name} and your age is {self.age}")
